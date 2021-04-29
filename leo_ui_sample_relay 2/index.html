@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+
+		<title>LeoRover</title>
+
+		<meta name="application-name" content="LeoRover UI">
+		<meta name="apple-mobile-web-app-title" content="LeoRover UI">
+
+		<meta name="theme-color" content="#000000">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+
+		<!-- icons -->
+		<link rel="shortcut icon" href="./img/logo.jpg">
+		<link rel="apple-touch-icon-precomposed" href="./img/logo.jpg">
+		<link rel="manifest" href="./manifest.webmanifest">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/bootstrap-slider.min.css" />
+		<link rel="stylesheet" href="css/font.css" />
+
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/bootstrap-slider.min.js"></script>
+		<script src="./js/roslib.min.js"></script>
+		<script src="./js/nipplejs.js"></script>
+
+		<script src="./js/leo.js"></script>
+		<script src="./js/fullscreen.js"></script>
+		<script src="./js/servoblock.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+
+		<title>LeoRover</title>
+
+		<meta name="application-name" content="LeoRover UI">
+		<meta name="apple-mobile-web-app-title" content="LeoRover UI">
+
+		<meta name="theme-color" content="#000000">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+
+		<!-- icons -->
+		<link rel="shortcut icon" href="./img/logo.jpg">
+		<link rel="apple-touch-icon-precomposed" href="./img/logo.jpg">
+		<link rel="manifest" href="./manifest.webmanifest">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/font.css" />
+
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/roslib.min.js"></script>
+		<script src="./js/leo.js"></script>
+		<script src="./js/fullscreen.js"></script>
+	</head>
+
+	<body class="bg-custom">
+	<nav class="navbar navbar-expand-md bg-bar">
+		<div class="container-fluid">
+			
+			<div class="col-2 navbar-brand" href="#">
+				<img class="rounded" src="./img/logoLeo.png" alt="Logo" style="width: 70px; height: 40px;"/>
+			</div>
+
+			<div class="col-3" >
+				<div id="batteryID" class="center-fit" style="width: 70px; height: 40px; color: aliceblue; text-align: center;">Voltage: 0V</div>
+			</div>
+
+			<div class="col-2 text-center">
+				<button class="bg-dark btn-sm mx-auto" style="width: 45px; height: 45px;" type="button" onclick="fullScreen()">
+					<img class="rounded img-fluid" src="img/nav-bar-fullscreen.svg" alt="FullScreen" style="width: 25px; height: 25px;"/>
+				</button>
+			</div>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="col-5 collapse navbar-collapse ml-auto" id="collapsibleNavbar">
+				<ul class="navbar-nav ml-auto">
+				<li class="nav-item ml-auto">
+					<button type="button" class="btn btn-warning btn-sm custom-btn mt-2 ml-3" onclick="systemReboot()">Reboot</button>
+				</li>
+				<!-- <li class="nav-item ml-auto">
+					<button type="button" class="btn btn-warning btn-sm custom-btn mt-2 ml-3" onclick="streamReboot()">Reboot stream</button>
+				</li> -->
+				<li class="nav-item ml-auto">
+					<button type="button" class="btn btn-danger btn-sm custom-btn mt-2 ml-3" onclick="turnOff()">Turn off</button>
+				</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+
+
+	 <head>
+		 
+	
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="tableExport/tableExport.js"></script>
+<script type="text/javascript" src="tableExport/jquery.base64.js"></script>
+<script src="js/custom_export.js"></script>	
+	 </head>
+	 <body>
+	  <div class="container">
+	   <div class="table-responsive">
+
+		<br />
+	
+		<div align="center">
+		 <button type="button" name="load_data" id="load_data" class="btn btn-info">Load Data </button>
+		
+		 <button type="button" name="export_data" id="export_data" class="btn btn-info" onclick="download_csv()">Export Data </button>
+		<button type="button" name="close_data" id="close_data" class="btn btn-info" value="close_data" onclick=" document.getElementById('record').style.display = 'none';">Close </button>
+		<div id="rover_table"></div>
+		 <div><img id="myImage" src="rover.jpg" /></div>
+		 <input type="button" class="btn btn-info" value="Start" onclick="javaScript:startStopImg()" id="startButton">
+		
+		</div>
+		<br />
+	
+		</div>
+	   </div>
+	  </div>
+	
+	  <div class="justify-content-center" style="margin-top: -70px; min-width: 100%; min-height: 100%; ">
+		<img src="" class="p-1 center-fit" alt="" id="video" style="background-size: cover"></img>
+	<div>
+	 
+	
+	  <script>
+		  var imgObj;
+var animate = null;
+function init(){
+    imgObj = document.getElementById('myImage');
+    imgObj.style.position= 'relative';
+    imgObj.style.left = '0px';
+}
+
+startStopImg = function(){
+    if(animate != null){
+        stop();
+    } else {
+        moveRight();
+    }
+   change();
+}
+
+function moveRight(){
+imgObj.style.left = (parseInt(imgObj.style.left) + 10) + 'px';
+animate = setTimeout(moveRight,50); 
+}
+
+change = function(){
+var elem = document.getElementById("startButton");
+if (elem.value=="Stop") elem.value = "Start";
+else elem.value = "Stop";
+}
+
+stop = function(){
+    clearTimeout(animate);
+    animate = null;
+}
+window.onload = init();
+	  </script>
+	  <script>
+		var rover_data = [
+		   ['34.040732',' North,118.261245,West,15:12:28,2020-10-16,Front,147B197-726,87654A'],
+		   ['34.040732',' North,118.261245,West,15:12:28,2020-10-16,Front,147B197-726,87654A']
+		];
+		 
+		 
+		function download_csv() {
+			var csv = 'Name,Title\n';
+			rover_data.forEach(function(row) {
+					csv += row.join(',');
+					csv += "\n";
+			});
+		 
+			console.log(csv);
+			var hiddenElement = document.createElement('a');
+			hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(csv);
+			hiddenElement.target = '_blank';
+			hiddenElement.download = 'data.csv';
+			hiddenElement.click();
+		}
+		</script>
+	
+	<script>
+	$(document).ready(function(){
+	 $('#load_data').click(function(){
+	  $.ajax({
+	   url:"data.csv",
+	   dataType:"text",
+	   success:function(data)
+	   {
+		var rover_data = data.split(/\r?\n|\r/);
+		var table_data = '<table id ="record" class="table table-condensed table-hover table-vertical table-striped">';
+		for(var count = 0; count<rover_data.length; count++)
+		{
+		 var cell_data = rover_data[count].split(",");
+		 table_data += '<tr>';
+		 for(var cell_count=0; cell_count<cell_data.length; cell_count++)
+		 {
+		  if(count === 0)
+		  {
+		   table_data += '<th>'+cell_data[cell_count]+'</th>';
+		  }
+		  else
+		  {
+		   table_data += '<td>'+cell_data[cell_count]+'</td>';
+		  }
+		 }
+		 table_data += '</tr>';
+		}
+		table_data += '</table>';
+		$('#rover_table').html(table_data);
+		
+	   }
+	  });
+	 });
+	 
+	});
+
+	
+</script>
+ 
+
+	
+	</script>
+
+
+
+          
+		</div>
+	</body>
+	<div align="margin-left"></div>
+	<div class="container ml-3" style="color: #ffffff">
+		<div >
+			<label class="switch">
+				<input type="checkbox" id="relay-1" onclick="rel1Trig()">
+				<span class="slider"></span>
+			</label>
+			Relay 1
+		</div>
+		<div>
+			<label class="switch">
+				<input type="checkbox" id="relay-2" onclick="rel2Trig()">
+				<span class="slider"></span>
+			</label>
+			Relay 2
+		</div>
+		<div>
+			<label class="switch">
+				<input type="checkbox" id="relay-3" onclick="rel3Trig()">
+				<span class="slider"></span>
+			</label>
+			Relay 3
+		</div>
+		<div>
+			<label class="switch">
+				<input type="checkbox" id="relay-4" onclick="rel4Trig()">
+				<span class="slider"></span>
+			</label>
+			Relay 4
+		</div>
+	<br>
+	<br>
+	<div align="center">
+	
+		<div class = "rovermovement", style="float:center">
+			<div align="left">
+			<label for="Mode">Rover Mode </label>
+		</div>
+		</div>
+			<div class ='circleBase' id='rotateMode'>
+	
+			<button id="left" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-left"></span></button>
+	
+			 <button id="right" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-right"></span></button>
+	 
+			 <button id="up" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-up"></span></button>
+	 
+			<button id="down" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-arrow-down"></span></button>
+
+			<button class="button button5">Stop</button>
+			
+			</div>
+			</div>
+		
+	</div>
+
+	
+	  <script>
+	
+	  function myFunction() {
+		document.getElementById("myDropdown").classList.toggle("show");
+	  }
+	  
+	 
+	  window.onclick = function(event) {
+		if (!event.target.matches('.dropbtn')) {
+		  var dropdowns = document.getElementsByClassName("dropdown-content");
+		  var i;
+		  for (i = 0; i < dropdowns.length; i++) {
+			var openDropdown = dropdowns[i];
+			if (openDropdown.classList.contains('show')) {
+			  openDropdown.classList.remove('show');
+			}
+		  }
+		}
+	  }
+	  </script>
+		<body>
+			<div class="dropdown">
+				<div text-align="center">
+				<button onclick="myFunction()" class="dropbtn">Speed</button>
+				<div id="myDropdown" class="dropdown-content">
+				  <a href="#0.10 mph">0.10 mph</a>
+				  <a href="#0.5 mph">0.5 mph</a>
+				  <a href="#1 mph">1 mph</a>
+				  </div>
+				</div>
+			  </div>
+			</body>
+		
+	</div>
+	</body>
+
+</html>

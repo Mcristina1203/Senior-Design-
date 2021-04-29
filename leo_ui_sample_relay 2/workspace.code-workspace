@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../App"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../leo_ui_sample_relay"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "leo_ui_sample_relay 2"
+	}
+}
